@@ -58,4 +58,8 @@ function playSound(item) {
 function bottomAnimation(arg) {
     var activeBotton = document.querySelector("."+ arg);
     activeBotton.classList.add("pressed");
+
+    setTimeout(function () {
+        activeBotton.classList.remove("pressed");
+    }, 100)
 }
